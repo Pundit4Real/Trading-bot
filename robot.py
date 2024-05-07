@@ -23,7 +23,7 @@ def connect_to_mt5():
     print("Connected to MetaTrader 5")
     return True
 
-
+#Fetching data from the broker
 def fetch_historical_data(symbol, timeframe, start_time, end_time):
     rates = mt5.copy_rates_range(symbol, timeframe, start_time, end_time)
     if rates is None:
